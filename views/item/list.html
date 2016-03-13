@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1>List items</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <ul class="nav nav-tabs nav-justified">
+            <li role="presentation"><a href="#/">Home</a></li>
+            <li role="presentation" class="active"><a href="#/items">Items</a></li>
+            <li role="presentation"><a href="#/categories">Categories</a></li>
+        </ul>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-md-4">
+        <div class="list-group">
+            <a href="#/items/new" class="list-group-item">Create new items</a>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <table class="table table-bordered table-hover table-responsive">
+                <tr ng-repeat="item in items">
+                    <td><decorate-item></decorate-item></td>
+                    <td><a href="" ng-click="editItem(item)"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> edit </a></td>
+                    <td><a href="" ng-click="removeItem(item)"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> remove </a></td>
+                </tr>
+        </table>
+    </div>
+</div>

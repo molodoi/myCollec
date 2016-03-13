@@ -8,7 +8,7 @@ Technologies & versions:
 - Bootstrap 3.3.6
 - Jquery 2.2.1
 
-Contenu
+Content
 ========================
 Build and structure a little Angular app.
 

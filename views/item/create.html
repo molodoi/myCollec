@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1>Create an Item</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <ul class="nav nav-tabs nav-justified">
+            <li role="presentation"><a href="#/">Home</a></li>
+            <li role="presentation" class="active"><a href="#/items">Items</a></li>
+            <li role="presentation"><a href="#/categories">Categories</a></li>
+        </ul>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-md-4">
+        <div class="list-group">
+            <a href="#/items" class="list-group-item">List Items</a>
+        </div>
+    </div>
+    <div class="col-md-8">
+            <form>
+                <div class="form-group">
+                    <label>Item Name :</label><br />
+                    <input ng-model="item.name" type="text" name="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Parent Category :</label><br />
+                    <select ng-model="item.category_id" ng-options="category.id as category.name for category in categories" class="form-control"></select>
+                </div>
+                <button ng-click="createItem(item)" class="btn btn-primary btn-lg">create</button>
+        </form>
+    </div>
+</div>

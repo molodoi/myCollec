@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1>Create a Category</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <ul class="nav nav-tabs nav-justified">
+            <li role="presentation"><a href="#/">Home</a></li>
+            <li role="presentation"><a href="#/items">Items</a></li>
+            <li role="presentation" class="active"><a href="#/categories">Categories</a></li>
+        </ul>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-md-4">
+        <div class="list-group">
+            <a href="#/categories" class="list-group-item">List of categories</a>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <form>
+            <div class="form-group">
+                <label for="category-name">Category Name :</label><br />
+                <input ng-model="category.name" type="text" name="name" id="category-name" class="form-control">
+            </div>
+            <button ng-click="createCategory(category)" class="btn btn-primary btn-lg">Create</button>
+        </form>
+    </div>
+</div>
